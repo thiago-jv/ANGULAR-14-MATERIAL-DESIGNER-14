@@ -5,6 +5,7 @@ import { FormFieldInputComponent } from './form-field-input/form-field-input.com
 import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { DatapickerComponent } from './datapicker/datapicker.component';
+import { SnackbarComponent } from './snackbar/snackbar.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,9 @@ const routes: Routes = [
   },
   {
     path: 'datapicker', component: DatapickerComponent
+  },
+  {
+    path: 'snackbar', component: SnackbarComponent
   }
 ];
 

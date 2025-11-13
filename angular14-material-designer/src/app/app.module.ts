@@ -10,6 +10,7 @@ import { FormFieldInputComponent } from './form-field-input/form-field-input.com
 import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { DatapickerComponent } from './datapicker/datapicker.component';
+import { SnackbarComponent } from './snackbar/snackbar.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { DatapickerComponent } from './datapicker/datapicker.component';
     ProgressSpinnerComponent,
     TabsComponent,
     DatapickerComponent,
+    SnackbarComponent,
   ],
   imports: [
     BrowserModule,
