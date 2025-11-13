@@ -6,6 +6,8 @@ import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.co
 import { TabsComponent } from './tabs/tabs.component';
 import { DatapickerComponent } from './datapicker/datapicker.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
+import { DialogModalComponent } from './dialog-modal/dialog-modal.component';
+import { DialogComponent } from './dialog-modal/dialog/dialog.component';
 
 const routes: Routes = [
   {
@@ -25,6 +27,9 @@ const routes: Routes = [
   },
   {
     path: 'snackbar', component: SnackbarComponent
+  },
+  {
+    path: 'dialog', component: DialogComponent
   }
 ];
 
