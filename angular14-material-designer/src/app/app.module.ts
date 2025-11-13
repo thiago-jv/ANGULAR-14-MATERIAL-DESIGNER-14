@@ -6,11 +6,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { ButonsIconsComponent } from './butons-icons/butons-icons.component';
+import { FormFieldInputComponent } from './form-field-input/form-field-input.component';
+import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ButonsIconsComponent
+    ButonsIconsComponent,
+    FormFieldInputComponent,
+    ProgressSpinnerComponent
   ],
   imports: [
     BrowserModule,

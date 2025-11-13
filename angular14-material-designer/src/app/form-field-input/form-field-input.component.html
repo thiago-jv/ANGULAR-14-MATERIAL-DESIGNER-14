@@ -1,0 +1,18 @@
+<h1>Input</h1>
+
+<mat-form-field floatLabel="always">
+  <input matInput type="text" placeholder="Name">
+</mat-form-field>
+
+<mat-form-field floatLabel="always" appearance="outline">
+  <mat-label>Name</mat-label>
+  <input matInput type="text" placeholder="Name">
+  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Name</mat-label>
+  <input #userName type="text" matInput placeholder="Name" maxlength="10">
+  <mat-hint align="start">Apenas {{ userName.maxLength }} caracteres</mat-hint>
+  <mat-hint align="end">{{ userName.value.length }}/10</mat-hint>
+</mat-form-field>
