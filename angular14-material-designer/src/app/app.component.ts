@@ -10,7 +10,7 @@ import { MatSidenav } from '@angular/material/sidenav';
 export class AppComponent {
   title = 'angular14-material-designer';
 
-  @ViewChild(MatSidenav) sidenav!: MatSidenav;
+  public isSmallScreen = false;
 
   constructor(
     private breakpointObserver: BreakpointObserver){}
@@ -19,14 +19,15 @@ export class AppComponent {
       this.breakpointObserver.observe(['(max-width: 800px)']).subscribe({
         next: (res) => {
           if(res.matches){
-            this.sidenav.mode = 'over'
-            this.sidenav.close();
+          this.isSmallScreen = true;
           } else {
-            this.sidenav.mode = 'push'
-            this.sidenav.open();
-
+            this.isSmallScreen = false;
           }
         }
       })
+    }
+
+    get sidenavMode(){
+      return this.isSmallScreen ? 'over' : 'side';
     }
 }

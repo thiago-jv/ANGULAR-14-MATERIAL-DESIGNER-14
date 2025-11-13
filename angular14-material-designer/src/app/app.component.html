@@ -5,8 +5,8 @@
   #sidenav
   [fixedInViewport]="true"
   class="sidenav"
-  opened
-  mode="push">
+  [opened]="!isSmallScreen"
+  [mode]="sidenavMode">
   </mat-sidenav>
 
     <mat-sidenav-content>
