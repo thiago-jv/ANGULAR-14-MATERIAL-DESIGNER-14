@@ -8,6 +8,7 @@ import { DatapickerComponent } from './datapicker/datapicker.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { DialogModalComponent } from './dialog-modal/dialog-modal.component';
 import { DialogComponent } from './dialog-modal/dialog/dialog.component';
+import { DataTableComponent } from './data-table/data-table.component';
 
 const routes: Routes = [
   {
@@ -30,6 +31,9 @@ const routes: Routes = [
   },
   {
     path: 'dialog', component: DialogComponent
+  },
+  {
+    path: 'data-table', component: DataTableComponent
   }
 ];
 

@@ -13,6 +13,7 @@ import { DatapickerComponent } from './datapicker/datapicker.component';
 import { SnackbarComponent } from './snackbar/snackbar.component';
 import { DialogModalComponent } from './dialog-modal/dialog-modal.component';
 import { DialogComponent } from './dialog-modal/dialog/dialog.component';
+import { DataTableComponent } from './data-table/data-table.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { DialogComponent } from './dialog-modal/dialog/dialog.component';
     SnackbarComponent,
     DialogModalComponent,
     DialogComponent,
+    DataTableComponent,
   ],
   imports: [
     BrowserModule,
